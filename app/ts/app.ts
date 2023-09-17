@@ -1,15 +1,7 @@
-let contaController = new ContaController();
+const pessoa = new Pessoa("roberto", 20, new Date("2003-03-27T00:00:00"))
+const pessoa_fisica = new PessoaFisica("roberto", 20, new Date("2003-03-27T00:00:00"), "11111111111")
+const pessoa_juridica = new PessoaJuridica("roberto", 20, new Date("2003-03-27T00:00:00"), "22222222222222")
 
-contaController.listar();
-
-const c1 = new Conta('1', 100);
-const p1 = new Poupanca('2', 100);
-const cb1 = new ContaBonificada('3', 0);
-
-console.log('Conta: ' + c1.saldo);
-
-p1.atualizarSaldoAniversario();
-console.log('Poupanca: ' + p1.saldo);
-
-cb1.creditar(100);
-console.log('Conta Bonificada: ' + cb1.saldo);
+console.log(pessoa.toString())
+console.log(pessoa_fisica.toString())
+console.log(pessoa_juridica.toString())
